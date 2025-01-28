@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -26,6 +27,16 @@ namespace farba
         public MainWindow()
         {
             this.InitializeComponent();
+            this.ExtendsContentIntoTitleBar = true;
+
+            var appWindowsPresenter = this.AppWindow.Presenter as OverlappedPresenter;
+            if (appWindowsPresenter != null)
+            {
+                appWindowsPresenter.IsResizable = false;
+                appWindowsPresenter.IsMaximizable = false;
+            }
+
+            AppWindow.Resize(new Windows.Graphics.SizeInt32(450, 350));
         }
 
         private void myButton_Click(object sender, RoutedEventArgs e)
