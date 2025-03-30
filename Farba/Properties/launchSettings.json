@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Farba (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Farba (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
