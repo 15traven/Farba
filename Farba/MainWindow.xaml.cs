@@ -21,6 +21,7 @@ namespace Farba
         {
             this.InitializeComponent();
             this.ExtendsContentIntoTitleBar = true;
+            SetTitleBar(TitleBar);
 
             AppWindow.Resize(new Windows.Graphics.SizeInt32(400, 600));
         }
