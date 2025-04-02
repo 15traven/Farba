@@ -23,8 +23,27 @@
         <TitleBar x:Name="TitleBar"
                   Title="Farba"/>
 
-        <Frame x:Name="rootFrame" 
-               Grid.Row="1"
-               SourcePageType="views:ColorSelectorPage" />
+        <NavigationView x:Name="NavView"
+                        PaneDisplayMode="Top"
+                        IsBackButtonVisible="Collapsed"
+                        IsSettingsVisible="False"
+                        Grid.Row="1">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Tag="ColorSelectorPage" IsSelected="True">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEF3C;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Tag="PaletteGeneratorPage">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xe794;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+
+            <NavigationView.Content>
+                <Frame x:Name="rootFrame"/>
+            </NavigationView.Content>
+        </NavigationView>
     </Grid>
 </Window>
