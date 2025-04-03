@@ -39,6 +39,11 @@
                         <FontIcon Glyph="&#xe794;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItem Tag="ContrastCheckerPage">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xe7a1;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
             </NavigationView.MenuItems>
 
             <NavigationView.Content>

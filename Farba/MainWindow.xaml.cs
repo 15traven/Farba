@@ -41,6 +41,9 @@ namespace Farba
                     case "PaletteGeneratorPage":
                         rootFrame.Navigate(typeof(PaletteGeneratorPage));
                         break;
+                    case "ContrastCheckerPage":
+                        rootFrame.Navigate(typeof(ContrastCheckerPage));
+                        break;
                 }
             }
         }
