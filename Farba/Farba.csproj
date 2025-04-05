@@ -13,8 +13,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="View\ContrastCheckerPage.xaml" />
-    <None Remove="View\PaletteGeneratorPage.xaml" />
+    <None Remove="Views\ContrastCheckerPage.xaml" />
+    <None Remove="Views\PaletteGeneratorPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
