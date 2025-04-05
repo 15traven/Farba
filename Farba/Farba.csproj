@@ -44,6 +44,11 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250310001" />
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\AllPalettesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="View\ContrastCheckerPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

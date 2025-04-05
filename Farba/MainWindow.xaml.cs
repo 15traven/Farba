@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Farba.View;
+using Farba.Views;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -35,6 +36,9 @@ namespace Farba
             {
                 switch (item.Tag)
                 {
+                    case "AllPalettesPage":
+                        rootFrame.Navigate(typeof(AllPalettesPage));
+                        break;
                     case "ColorSelectorPage":
                         rootFrame.Navigate(typeof(ColorSelectorPage));
                         break;

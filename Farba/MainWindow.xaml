@@ -29,6 +29,11 @@
                         IsSettingsVisible="False"
                         Grid.Row="1">
             <NavigationView.MenuItems>
+                <NavigationViewItem Tag="AllPalettesPage" IsSelected="True">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xe790;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
                 <NavigationViewItem Tag="ColorSelectorPage" IsSelected="True">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xe9e9;"/>
