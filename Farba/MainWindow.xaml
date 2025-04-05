@@ -31,7 +31,7 @@
             <NavigationView.MenuItems>
                 <NavigationViewItem Tag="ColorSelectorPage" IsSelected="True">
                     <NavigationViewItem.Icon>
-                        <FontIcon Glyph="&#xEF3C;"/>
+                        <FontIcon Glyph="&#xe9e9;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
                 <NavigationViewItem Tag="PaletteGeneratorPage">
